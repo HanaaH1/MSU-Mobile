@@ -1,0 +1,99 @@
+/* =====================
+   MOBILE FIX (REAL NEWS STYLE)
+===================== */
+@media (max-width: 768px) {
+
+    /* GLOBAL */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* TOP BAR */
+    .topbar {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+        padding: 15px 0;
+    }
+
+    .home .masthead img {
+        width: 160px;
+    }
+
+    .article .masthead img {
+        width: 120px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    /* 🔥 NAV BAR FIX (THIS IS THE IMPORTANT PART) */
+    .nav {
+        display: flex;
+        justify-content: flex-start;   /* left aligned */
+        gap: 15px;
+        padding: 10px 15px;
+        overflow-x: auto;              /* enables scrolling */
+        white-space: nowrap;           /* keeps items in one line */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav a {
+        font-size: 15px;
+        padding: 6px 10px;
+        flex-shrink: 0;                /* prevents shrinking */
+    }
+
+    /* OPTIONAL: hide scrollbar for clean look */
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* SECTIONS */
+    .feature,
+    .latest,
+    #filteredSection {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .feature h1,
+    .latest h1,
+    #filteredSection h1 {
+        font-size: 24px;
+    }
+
+    /* ARTICLES */
+    article {
+        padding: 15px 0;
+    }
+
+    .feature h2 {
+        font-size: 20px;
+    }
+
+    .feature p,
+    .news-row p {
+        font-size: 14px;
+    }
+
+    .news-row h3 {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    /* SUB BOX */
+    .subscription-box {
+        width: 100%;
+        max-width: 320px;
+    }
+}
